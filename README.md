@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to pysimplegui 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://twitter.com/juam\_sv" target="_blank">
+  <a href="https://twitter.com/juam_sv" target="_blank">
     <img alt="Twitter: juam\_sv" src="https://img.shields.io/twitter/follow/juam\_sv.svg?style=social" />
   </a>
 </p>
