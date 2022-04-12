@@ -6,9 +6,18 @@
   </a>
 </p>
 
-> Alguns pequenos projetos e testes usando a biblioteca python pysimplegui
+> Some projects and tests using python library pysimplegui
 
 ### 🏠 [Homepage](https://github.com/juam-sv/pysimplegui)
+
+![](./Media/conversion.gif)
+
+## Create and activate virtual enviroment 
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate.fish
+```
 
 ## Install
 
