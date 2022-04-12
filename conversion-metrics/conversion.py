@@ -4,7 +4,7 @@ layout = [
     [sg.Text('Conversion Metrics')],
     [
         sg.Input(key='-INPUT-'), 
-        sg.Spin(['KM/Miles', 'Hours/Minutes', 'Graus/fahrenheit'], key='-UNITS-')
+        sg.Spin(['KM/Miles', 'Hours/Minutes', 'Celsius/fahrenheit'], key='-UNITS-')
     ],
     [
         sg.Text('Result: '), 
@@ -31,7 +31,7 @@ while True:
                 case 'Hours/Minutes':
                     result = round(float(input_values) * 60, 2)
                     result_string = f'{input_values} Hours = {result} Minutes'
-                case 'Graus/fahrenheit':
+                case 'Celsius/fahrenheit':
                     result = round(float(input_values) * 1.8 + 32, 2)
                     result_string = f'{input_values} Graus Celsius= {result} Fahrenheit'
             window['-RESULT-'].update(result_string)
