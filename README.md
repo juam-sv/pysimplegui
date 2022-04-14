@@ -12,6 +12,7 @@
 
 ![](./Media/conversion.gif)
 
+![](./Media/calculator.gif)
 ## Create and activate virtual enviroment 
 
 ```sh
