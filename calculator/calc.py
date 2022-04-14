@@ -8,7 +8,6 @@ def create_window(theme):
     layout = [
         [
             sg.Text(
-                'Result: ', 
                 font = 'Calibre 16', 
                 justification='right', 
                 expand_x = True, 
@@ -31,6 +30,7 @@ window = create_window('dark')
 
 # lists for the numbers and operators
 display_numbers = []
+all_operators = []
 
 while True:
     event, values = window.read()\
@@ -46,15 +46,21 @@ while True:
         display_numbers.append(event)
         str_display_numbers = ''.join(display_numbers)
         window['-DISPLAY-'].update(str_display_numbers)
-        
 
     if event in ['+', '-', '*', '/']:
-        print(event)
+        all_operators.append(''.join(display_numbers))
+        display_numbers = []
+        all_operators.append(event)
+        window['-DISPLAY-'].update('')
 
     if event == 'Calc':
-        print(event)
+        all_operators.append(''.join(display_numbers))
+        result = eval(''.join(all_operators))
+        window['-DISPLAY-'].update(result)
 
     if event == 'Clear':
-        print(event)
+        display_numbers = [] 
+        all_operators = []
+        window['-DISPLAY-'].update('')
         
 window.close()
