@@ -10,9 +10,13 @@
 
 ### 🏠 [Homepage](https://github.com/juam-sv/pysimplegui)
 
+# Conversion of metrics
 ![](./Media/conversion.gif)
 
+# Calculator App
 ![](./Media/calculator.gif)
+
+
 ## Create and activate virtual enviroment 
 
 ```sh
