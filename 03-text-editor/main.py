@@ -2,9 +2,9 @@ import PySimpleGUI as sg
 from pathlib import Path
 
 emotions=[
-    'happy', [':)','XD',':D','<3'],
-    'sad',[':(','T_T' ],
-    'other',[':3']
+    'happy', [':-)',':D','<3', '*-*'],
+    'sad',[':(','T_T', ':('],
+    'other',[':3', ':V', ':/']
 ]
 
 emotions_events = emotions[1] + emotions[3] + emotions[5]
@@ -15,11 +15,11 @@ menu_layout = [
     ['Add', emotions]
 ]
 
-sg.theme('DarkPurple')
+sg.theme('DarkPurple4')
 layout = [
     [sg.Menu(menu_layout)],
     [sg.Text('Not Save', key='-DOC_NAME-')],
-    [sg.Multiline(no_scrollbar=True, size = (100,20), key='-TEXTBOOK-')],
+    [sg.Multiline(no_scrollbar=True, size = (40,20), key='-TEXTBOOK-')],
 ]
 
 window = sg.Window('Text Editor', layout)
@@ -27,7 +27,7 @@ window = sg.Window('Text Editor', layout)
 while True:
     event, values = window.read()
 
-    if event == sg.WIN_CLOSED:
+    if event == sg.WIN_CLOSED or event == 'Exit':
         break
     
     if event == 'Word Count':
@@ -51,9 +51,5 @@ while True:
         file = Path(file_path)
         file.write_text(values['-TEXTBOOK-'])
         window['-DOC_NAME-'].update(file.name)
-
-
-
-
 
 window.close()
