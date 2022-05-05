@@ -28,8 +28,10 @@
 <img src="https://raw.githubusercontent.com/juam-sv/pysimplegui/main/Media/calculator.gif" style="border-radius:10%">
 </div> <br>
 
-# 03 - Text Editor **[DEVELOPMENT STAGE]**
-
+# 03 - Text Editor 
+<div align="center"> 
+<img src="https://raw.githubusercontent.com/juam-sv/pysimplegui/main/Media/text-editor.gif" style="border-radius:10%">
+</div> <br>
 
 # **Guide Installation and Use**
 
